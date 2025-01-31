@@ -2,6 +2,9 @@
   width: 100%;
   max-width: 974px;
   margin: 0 auto;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
 }
 
 /** Шапка сайта **/
@@ -166,106 +169,171 @@
 /** Выполненные проекты **/
 
 .portfolio {
-    padding: 88px 0;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    color: var(--white);
+  padding: 88px 0;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: var(--white);
 }
 
 .portfolio__heading {
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 42px;
-    margin-bottom: 48px;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px;
+  margin-bottom: 48px;
 }
 
 .portfolio__card-list {
-    display: flex;
-    gap: 16px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
 }
 
 .portfolio__card-list-item {
-    min-width: 304px;
-    min-height: 304px;
-    width: 304px;
-    height: 304px;
-    border-radius: 6px;
+  min-width: 304px;
+  min-height: 304px;
+  width: 304px;
+  height: 304px;
+  border-radius: 6px;
 }
 
 .portfolio__card-list-item:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 .portfolio__card-link {
-    height: 100%;
-    display: block;
-    text-decoration: none;
-    border-radius: 6px;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
 .portfolio__card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    padding: 164px 32px 32px;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    font-family: Roboto, Arial, Helvetica, sans-serif;
-    color: var(--white);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 164px 32px 32px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: var(--white);
 }
 
 .portfolio__card-overlay {
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background: linear-gradient(180deg, rgba(196, 196, 196, 0.00) 35.34%, #213E60 99.85%);
-    width: 100%;
-    height: 100;
-    border-radius: 6px;
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0) 35.34%,
+    #213e60 99.85%
+  );
+  width: 100%;
+  height: 100;
+  border-radius: 6px;
 }
 
 .portfolio__card-heading {
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px;
-    z-index: 2;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  z-index: 2;
 }
 
 .portfolio__card-button {
-    width: 120px;
-    padding: 10px 25px;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 15.6px;
-    color: var(--white);
-    background-color: var(--rose-red);
-    z-index: 3;
-    box-shadow: 0 2px 0 0 #CE1C3E;
-    border: none;
-    border-radius: 6px;
+  width: 120px;
+  padding: 10px 25px;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15.6px;
+  color: var(--white);
+  background-color: var(--rose-red);
+  z-index: 3;
+  box-shadow: 0 2px 0 0 #ce1c3e;
+  border: none;
+  border-radius: 6px;
 }
 
 .portfolio__card-button:hover {
-    color: var(--dark-byzantine-blue);
-    background-color: var(--white);
-    box-shadow: 0 2px 0 0 var(--dark-byzantine-blue);
+  color: var(--dark-byzantine-blue);
+  background-color: var(--white);
+  box-shadow: 0 2px 0 0 var(--dark-byzantine-blue);
 }
 
 .card-type-one {
-    background-image: url(/images/card-image-one.jpg);
+  background-image: url(/images/card-image-one.jpg);
 }
 
 .card-type-two {
-    background-image: url(/images/card-image-two.png);
+  background-image: url(/images/card-image-two.png);
 }
 
 .card-type-three {
-    background-image: url(/images/card-image-three.png);
+  background-image: url(/images/card-image-three.png);
 }
 
+/** Галерея **/
+
+.gallery {
+  padding: 88px 0;
+  background-color: var(--dark-byzantine-blue);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.gallery__block {
+  display: grid;
+  grid-template-columns: repeat(4, 224px);
+  grid-template-rows: repeat(3, 224px);
+  gap: 16px 16px;
+}
+
+.gallery__item {
+  border-radius: 6px;
+}
+
+.gallery__item:hover {
+    opacity: 0.6;
+  transform: scale(1.02);
+}
+
+.gallery__item-link {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery__item-link-image {
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.gallery__video-icon-time {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  color: var(--white);
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.time {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.32px;
+}
+
+.play-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/** Подвал сайта **/
