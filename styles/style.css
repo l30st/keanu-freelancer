@@ -1,3 +1,9 @@
+.container {
+	width: 100%;
+	max-width: 974px;
+	margin: 0 auto;
+}
+
 /** Шапка сайта **/
 
 .header {
@@ -43,16 +49,121 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-.about-freelancer {
+.hero__about-freelancer {
   display: flex;
   flex-direction: column;
+  max-width: 464px;
 }
 
-.main-content-about {
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+.hero__main-content-about {
   font-size: 24px;
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: var(--accent);
+  padding-bottom: 12px;
+}
+
+.hero__heading-name {
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 59px;
+  color: var(--white);
+}
+
+.hero__freelancer-description {
+    margin-top: 24px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--white);
+}
+
+.hero__consultation-button {
+    margin-top: 36px;
+    width: 300px;
+    padding: 25px 62px;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    line-height: 15.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 6px;
+    color: var(--midnight);
+    background-color: var(--accent);
+    box-shadow: 0 4px 0 var(--shadow);
+}
+
+.hero__consultation-button:hover {
+    background: var(--midnight);
+	color: var(--white);
+	box-shadow: 0 0 0 3px var(--white);
+    transition: all .2s ease;
+}
+
+/** Со мной удобно работать ctrwbz **/
+
+.features {
+    padding: 88px 0;
+    background-color: var(--dark-byzantine-blue);
+}
+
+.features__main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.features__heading {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    color: var(--white);
+}
+
+.features__features-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 48px 16px;
+}
+
+.features__block-item {
+    min-width: 304px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--white)
+}
+
+.features__block-item-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.features__block-item-icon {
+    width: 52px;
+    height: 52px;
+}
+
+.features__block-item-heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    padding: 20px 0 16px;
+}
+
+.features__block-item-description {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 }
