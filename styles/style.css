@@ -1,0 +1,58 @@
+/** Шапка сайта **/
+
+.header {
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 100px;
+  margin: auto 0;
+}
+
+.social-links-list {
+  width: 128px;
+  display: flex;
+  gap: 16px;
+}
+
+.social-links-list-item {
+  list-style: none;
+}
+
+.social-link {
+  display: block;
+}
+
+.social-link:hover {
+  transform: scale(1.2);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  object-position: top;
+}
+
+/** Хиро секция **/
+
+.hero {
+  padding: 48px 0 88px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-freelancer {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content-about {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: normal;
+}

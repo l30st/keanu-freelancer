@@ -6,7 +6,19 @@
  ::after {
    box-sizing: border-box;
  }
- 
+
+ /**
+  Переменные цветов
+ */
+
+ :root {
+  --midnight: #1B2944;
+  --dark-byzantine-blue: #141F35;
+  --accent: #FFBB01;
+  --shadow: #B68500;
+  --white: #fff;
+ }
+
  /**
    Убираем внутренние отступы слева тегам списков,
    у которых есть атрибут class
@@ -17,11 +29,16 @@
  
  /**
    Убираем внешние отступы body и двум другим тегам,
-   у которых есть атрибут class
+   у которых есть атрибут class и задаем размер контейнера
   */
  body,
  :where(blockquote, figure):where([class]) {
    margin: 0;
+   max-width: 944px;
+   margin: 0 auto;
+   font-family: Roboto, Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   background-color: var(--midnight);
  }
  
  /**
