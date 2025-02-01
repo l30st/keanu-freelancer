@@ -263,15 +263,15 @@
 }
 
 .card-type-one {
-  background-image: url(/images/card-image-one.jpg);
+  background-image: url(../images/card-image-one.jpg);
 }
 
 .card-type-two {
-  background-image: url(/images/card-image-two.png);
+  background-image: url(../images/card-image-two.png);
 }
 
 .card-type-three {
-  background-image: url(/images/card-image-three.png);
+  background-image: url(../images/card-image-three.png);
 }
 
 /** Галерея **/
