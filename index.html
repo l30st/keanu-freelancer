@@ -65,9 +65,7 @@
             Разрабатываю сайты для малого и среднего бизнеса. У меня можно
             заказать дизайн и верстку небольшого сайта или интернет-магазина
           </p>
-          <a class="hero__consultation-button" href="#0">
-            Бесплатная консультация
-          </a>
+          <button class="button hero-button">Бесплатная консультация</button>
         </div>
         <img class="avatar" src="/images/avatar.png" alt="Аватар Киану" />
       </section>
@@ -174,55 +172,37 @@
         <h2 class="portfolio__heading">Выполненные проекты</h2>
         <ul class="portfolio__card-list">
           <li class="portfolio__card-list-item">
-            <a class="portfolio__card-link card-type-one" href="#0">
+            <div class="portfolio__card-object card-type-one">
               <article class="portfolio__card">
                 <div class="portfolio__card-overlay"></div>
                 <h3 class="portfolio__card-heading">
                   Любопытный уголок Шамареля
                 </h3>
-                <button
-                  class="portfolio__card-button"
-                  href="#0"
-                  target="_blank"
-                >
-                  Посмотреть
-                </button>
+                <button class="portfolio__card-button">Посмотреть</button>
               </article>
-            </a>
+            </div>
           </li>
           <li class="portfolio__card-list-item">
-            <a class="portfolio__card-link card-type-two" href="#0">
+            <div class="portfolio__card-object card-type-two">
               <article class="portfolio__card">
                 <div class="portfolio__card-overlay"></div>
                 <h3 class="portfolio__card-heading">
                   Жимхана клуб гольфа курс лучший
                 </h3>
-                <button
-                  class="portfolio__card-button"
-                  href="#0"
-                  target="_blank"
-                >
-                  Посмотреть
-                </button>
+                <button class="portfolio__card-button">Посмотреть</button>
               </article>
-            </a>
+            </div>
           </li>
           <li class="portfolio__card-list-item">
-            <a class="portfolio__card-link card-type-three" href="#0">
+            <div class="portfolio__card-object card-type-three">
               <article class="portfolio__card">
                 <div class="portfolio__card-overlay"></div>
                 <h3 class="portfolio__card-heading">
                   Водопады Тамаринд поход - целый день
                 </h3>
-                <button
-                  class="portfolio__card-button"
-                  href="#0"
-                  target="_blank"
-                >
-                  Посмотреть
-                </button>
+                <button class="portfolio__card-button">Посмотреть</button>
               </article>
-            </a>
+            </div>
           </li>
         </ul>
       </section>
@@ -357,6 +337,120 @@
         </div>
       </section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <h3 class="footer__heading">Свяжитесь со мной</h3>
+        <div class="footer__form-and-contacts">
+          <div class="footer__form-container">
+            <h4 class="footer__form-container-heading">
+              Можете просто оставить заявку, я позвоню вам сегодня
+            </h4>
+            <form
+              class="footer__form-container-flex"
+              action="/submit"
+              method="post"
+            >
+              <div class="footer__form-container-input">
+                <img
+                  class="icon"
+                  src="images/user-icon.svg"
+                  alt="Иконка Пользователя"
+                />
+                <input
+                  class="input-style"
+                  type="text"
+                  placeholder="Ваше имя"
+                  required
+                />
+              </div>
+              <div class="footer__form-container-input">
+                <img
+                  class="icon"
+                  src="images/phone-icon.svg"
+                  alt="Иконка Пользователя"
+                />
+                <input
+                  class="input-style second-input-margin-bottom"
+                  type="text"
+                  placeholder="Ваш телефон"
+                  required
+                />
+              </div>
+            </form>
+            <button class="button">Бесплатная консультация</button>
+          </div>
+          <div class="footer__contacts-container">
+            <div class="footer__contacts-container-contacts">
+              <div class="footer__contacts-container-contacts-item">
+                <h4 class="footer__contacts-container-contacts-item-heading">
+                  Телефон
+                </h4>
+                <a class="contact-link" href="tel:+99995555555"
+                  >+9 999 555 5555</a
+                >
+              </div>
+              <div class="footer__contacts-container-contacts-item">
+                <h4 class="footer__contacts-container-contacts-item-heading">
+                  Почта
+                </h4>
+                <a class="contact-link" href="mailto:ivanov@mail.ru"
+                  >ivanov@mail.ru</a
+                >
+              </div>
+              <div class="footer__contacts-container-contacts-item">
+                <h4 class="footer__contacts-container-contacts-item-heading">
+                  Соцсети
+                </h4>
+                <ul class="social-links-list">
+                  <li class="social-links-list-item">
+                    <a class="social-link" href="#0" target="_blank">
+                      <img
+                        class="social-icon"
+                        src="images/github.svg"
+                        alt="Ссылка на Гитхаб"
+                      />
+                    </a>
+                  </li>
+                  <li class="social-links-list-item">
+                    <a class="social-link" href="#0" target="_blank">
+                      <img
+                        class="social-icon"
+                        src="images/twitter.svg"
+                        alt="Ссылка на Твиттер"
+                      />
+                    </a>
+                  </li>
+                  <li class="social-links-list-item">
+                    <a class="social-link" href="#0" target="_blank">
+                      <img
+                        class="social-icon"
+                        src="images/instagram.svg"
+                        alt="Ссылка на Инстаграм"
+                      />
+                    </a>
+                  </li>
+                  <li class="social-links-list-item">
+                    <a class="social-link" href="#0" target="_blank">
+                      <img
+                        class="social-icon"
+                        src="images/facebook.svg"
+                        alt="Ссылка на Фейсбук"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a
+              class="footer__contacts-container-privacy-policy"
+              href="#0"
+              target="_blank"
+            >
+              Политика конфиденциальности
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
