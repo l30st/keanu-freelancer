@@ -197,6 +197,7 @@
 @media (max-width: 320px) {
   .container {
     max-width: 320px;
+    min-width: 320px;
     margin: 0 auto;
     padding-left: 24px;
     padding-right: 24px;
@@ -216,6 +217,7 @@
   /** Hero section **/
 
   .hero {
+    width: 320px;
     padding: 8px 24px 48px;
     display: flex;
     flex-direction: column;
@@ -269,6 +271,7 @@
   /** Со мной удобно работать **/
 
   .features {
+    width: 320px;
     padding: 48px 0;
   }
 
@@ -335,6 +338,7 @@
     display: grid;
     gap: 16px;
     padding: 16px 16px;
+    width: 272px;
     height: 180px;
   }
 }
