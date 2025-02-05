@@ -19,7 +19,6 @@
 }
 
 .social-links-list {
-  width: 128px;
   display: flex;
   gap: 16px;
 }
@@ -39,7 +38,6 @@
 .social-icon {
   width: 20px;
   height: 20px;
-  object-position: top;
 }
 
 /** Хиро секция **/
@@ -47,7 +45,7 @@
 .hero {
   padding: 48px 0 88px;
   display: flex;
-  justify-content: space-between;
+  gap: 96px;
   align-items: center;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
@@ -55,10 +53,9 @@
 .hero__about-freelancer {
   display: flex;
   flex-direction: column;
-  max-width: 464px;
 }
 
-.hero__main-content-about {
+.hero__about-freelancer-subheading {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
@@ -67,7 +64,7 @@
   padding-bottom: 12px;
 }
 
-.hero__heading-name {
+.hero__about-freelancer-name {
   font-size: 50px;
   font-style: normal;
   font-weight: 700;
@@ -75,7 +72,7 @@
   color: var(--white);
 }
 
-.hero__freelancer-description {
+.hero__about-freelancer-description {
   margin-top: 24px;
   font-size: 16px;
   font-style: normal;
@@ -112,6 +109,11 @@
   transition: all 0.2s ease;
 }
 
+.hero__about-freelancer-avatar {
+  width: 384px;
+  aspect-ratio: 1;
+}
+
 /** Со мной удобно работать **/
 
 .features {
@@ -132,35 +134,36 @@
 .features__features-block {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 48px 16px;
-}
-
-.features__block-item {
-  min-width: 304px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
   color: var(--white);
 }
 
-.features__block-item-content {
+.features__features-block-item {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
-.features__block-item-icon {
+.features__features-block-item-icon {
   width: 52px;
-  height: 52px;
+  aspect-ratio: 1;
 }
 
-.features__block-item-heading {
+.features__features-block-item-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.features__features-block-item-text-content-heading {
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
   line-height: 28px;
-  padding: 20px 0 16px;
 }
 
-.features__block-item-description {
+.features__features-block-item-text-content-description {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -185,15 +188,17 @@
 
 .portfolio__card-list {
   display: grid;
-  grid-template-columns: repeat(3, 304px);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 16px;
 }
 
 .portfolio__card-list-item {
   position: relative;
   display: grid;
+  align-items: flex-end;
+  align-content: end;
   gap: 16px;
-  padding: 164px 32px 32px;
+  padding: 32px 32px;
   height: 304px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -231,6 +236,7 @@
 
 .portfolio__card-list-item-button {
   width: 120px;
+  height: 36px;
   padding: 10px 25px;
   font-size: 12px;
   font-style: normal;
@@ -272,8 +278,8 @@
 
 .gallery__block {
   display: grid;
-  grid-template-columns: repeat(4, 224px);
-  grid-template-rows: repeat(3, 224px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   gap: 16px 16px;
 }
 
