@@ -1,0 +1,116 @@
+/** Подвал сайта **/
+
+.footer {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--white);
+    padding: 88px 0;
+  }
+  
+  .footer__heading {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 47px;
+  }
+  
+  .footer__form-and-contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 96px;
+  }
+  
+  .footer__form-container {
+    padding: 38px 38px 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-content: center;
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: -5px 5px 0px var(--accent);
+  }
+  
+  .footer__form-container-heading {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+    color: var(--black);
+  }
+  
+  .footer__form-container-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .footer__form-container-input {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-radius: 5px;
+    padding: 20px 32px;
+    background: #f8f8f8;
+    box-shadow: 0px 3px 10px 0px rgba(199, 199, 199, 0.25) inset;
+  }
+  
+  .input-style {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    background-color: transparent;
+    border-style: none;
+    outline: none;
+    color: #949494;
+  }
+  
+  .footer__contacts-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--white);
+  }
+  
+  .footer__contacts-container-contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px 16px;
+    align-items: center;
+  }
+  
+  .footer__contacts-container-contacts-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .footer__contacts-container-contacts-item-heading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+  }
+  
+  .contact-link {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-decoration: none;
+    color: var(--white);
+  }
+  
+  .footer__contacts-container-privacy-policy {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #949494;
+  }  

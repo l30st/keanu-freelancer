@@ -225,3 +225,9 @@
      scroll-behavior: auto !important;
    }
  }
+
+ .container {
+  width: 100%;
+  max-width: 974px;
+  margin: 0 auto;
+}

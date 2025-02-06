@@ -1,0 +1,35 @@
+/** Шапка сайта **/
+
+.header {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__logo {
+    width: 100px;
+    margin: auto 0;
+  }
+  
+  .social-links-list {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .social-links-list-item {
+    list-style: none;
+  }
+  
+  .social-link {
+    display: block;
+  }
+  
+  .social-link:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icon {
+    width: 20px;
+    height: 20px;
+  }

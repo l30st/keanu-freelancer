@@ -1,0 +1,73 @@
+/** Хиро секция **/
+
+.hero {
+    padding: 48px 0 88px;
+    display: flex;
+    gap: 96px;
+    align-items: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+  }
+  
+  .hero__about-freelancer {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hero__about-freelancer-subheading {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--accent);
+    padding-bottom: 12px;
+  }
+  
+  .hero__about-freelancer-name {
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 59px;
+    color: var(--white);
+  }
+  
+  .hero__about-freelancer-description {
+    margin-top: 24px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--white);
+    margin-bottom: 36px;
+  }
+  
+  .button {
+    padding: 25px 62px;
+    font-size: 12px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    line-height: 15.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 6px;
+    color: var(--midnight);
+    background-color: var(--accent);
+    box-shadow: 0 4px 0 var(--shadow);
+    border-style: none;
+  }
+  
+  .hero-button {
+    width: 300px;
+  }
+  
+  .button:hover {
+    background: var(--midnight);
+    color: var(--white);
+    box-shadow: 0 0 0 3px var(--white);
+    transition: all 0.2s ease;
+  }
+  
+  .hero__about-freelancer-avatar {
+    width: 384px;
+    aspect-ratio: 1;
+  }
