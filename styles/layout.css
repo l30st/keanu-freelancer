@@ -13,6 +13,12 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  .hero__about-freelancer-avatar {
+    min-width: 284px;
+    max-width: 384px;
+    aspect-ratio: 1;
+  }
 }
 
 /** Responsive size for 768px **/
@@ -44,7 +50,8 @@
   }
 
   .hero__about-freelancer-avatar {
-    width: 288px;
+    min-width: 240px;
+    max-width: 288px;
     aspect-ratio: 1;
   }
 
@@ -60,7 +67,7 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-  /** Со мной удобно работать **/
+  /** Портфолио **/
 
   .portfolio {
     padding-top: 60px;
@@ -73,6 +80,180 @@
     gap: 16px;
     padding: 24px 24px;
     height: 216px;
+  }
+
+    /** Галерея **/
+
+    .gallery {
+      padding: 60px 0;
+    }
+
+    /** Подвал сайта **/
+
+    .footer {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+
+    .footer__heading {
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 42px;
+      margin-bottom: 47px;
+    }
+
+    .footer__form-and-contacts {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 60px;
+    }
+
+    .footer__contacts-container-contacts {
+      display: grid;
+      grid-template-columns: 1fr;
+
+      gap: 32px 16px;
+      align-items: center;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+ /** Hero section **/
+
+ .hero {
+  padding: 40px 32px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero__about-freelancer {
+  align-items: center;
+}
+
+.hero__about-freelancer-subheading {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.7;
+  padding-bottom: 4px;
+}
+
+.hero__about-freelancer-name {
+  font-size: 44px;
+  text-align: center;
+  line-height: 54px;
+}
+
+.hero__about-freelancer-description {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+
+.hero__about-freelancer-avatar {
+  max-width: 200px;
+  min-width: 180px;
+  aspect-ratio: 1;
+  order: -1;
+}
+
+.hero-button {
+  width: 100%;
+}
+
+  /** Портфолио **/
+  .portfolio__card-list-item {
+    position: relative;
+    display: grid;
+    gap: 16px;
+    padding: 20px 20px;
+    height: 180px;
+  }
+
+/** Галерея **/
+  .gallery__block {
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 252px;
+    column-gap: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 16px;
+    height: 272px;
+  }
+
+  .gallery__block > li {
+    scroll-snap-align: start;
+  }
+
+  .gallery__block::-webkit-scrollbar {
+    height: 4px;
+    border-radius: 6px;
+    background-color: #CECECE;
+  }
+
+  .gallery__block::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 6px;
+  }
+
+  .gallery__block::-webkit-scrollbar-track {
+ 
+    background-color: #CECECE;
+    border-radius: 6px;
+  }
+
+  /** Подвал сайта **/
+
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .footer__heading {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 42px;
+    margin-bottom: 47px;
+  }
+
+  .footer__form-and-contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .footer__contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--white);
+  }
+
+  .footer__contacts-container-contacts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px 16px;
+    align-items: center;
+  }
+
+  .footer__contacts-container-privacy-policy {
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #949494;
   }
 }
 
@@ -120,7 +301,8 @@
   }
 
   .hero__about-freelancer-avatar {
-    width: 180px;
+    max-width: 180px;
+    min-width: 110px;
     aspect-ratio: 1;
     order: -1;
   }
@@ -172,11 +354,19 @@
     line-height: 1.7;
   }
 
-  /** Со мной удобно работать **/
+  /** Портфолио **/
 
   .portfolio {
     padding-top: 48px;
     padding-bottom: 48px;
+  }
+
+  .portfolio__heading {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 32px;
   }
 
   .portfolio__card-list {
@@ -191,6 +381,112 @@
     padding: 20px 20px;
     height: 300px;
   }
+
+   /** Галерея **/
+
+   .gallery {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .gallery__block {
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 200px;
+    column-gap: 16px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 24px;
+    height: 228px;
+  }
+
+  .gallery__block > li {
+    scroll-snap-align: start;
+  }
+
+  .gallery__block::-webkit-scrollbar {
+    height: 4px;
+    border-radius: 6px;
+    background-color: #CECECE;
+  }
+
+  .gallery__block::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 6px;
+  }
+
+  .gallery__block::-webkit-scrollbar-track {
+ 
+    background-color: #CECECE;
+    border-radius: 6px;
+  }
+
+    /** Подвал сайта **/
+
+    .footer {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+  
+    .footer__heading {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 24px;
+    }
+  
+    .footer__form-and-contacts {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+
+    .footer__form-container {
+      padding: 32px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      align-content: center;
+      background-color: var(--white);
+      width: 100%;
+      border-radius: 6px;
+      box-shadow: -5px 5px 0px var(--accent);
+    }
+
+    .footer__form-container-heading {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.4;
+    }
+  
+    .footer__contacts-container {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+      font-family: Roboto, Arial, Helvetica, sans-serif;
+      color: var(--white);
+    }
+  
+    .footer__contacts-container-contacts {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      align-items: center;
+    }
+  
+    .footer__contacts-container-privacy-policy {
+      text-align: center;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-decoration-line: underline;
+      color: #949494;
+    }
 }
 
 /** Responsive size for 320px **/
@@ -313,7 +609,7 @@
     line-height: 1.7;
   }
 
-  /** Со мной удобно работать **/
+  /** Порифолио **/
 
   .portfolio__heading {
     font-size: 19px;
@@ -340,5 +636,146 @@
     padding: 16px 16px;
     width: 272px;
     height: 180px;
+  }
+
+  /** Галерея **/
+
+  .gallery {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .gallery__block {
+    display: grid;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    grid-auto-columns: 129px;
+    column-gap: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 24px;
+    height: 153px;
+  }
+
+  .gallery__block > li {
+    scroll-snap-align: start;
+  }
+
+  .gallery__block::-webkit-scrollbar {
+    height: 4px;
+    border-radius: 6px;
+    background-color: #CECECE;
+  }
+
+  .gallery__block::-webkit-scrollbar-thumb {
+    background-color: var(--accent);
+    border-radius: 6px;
+  }
+
+  .gallery__block::-webkit-scrollbar-track {
+    background-color: #CECECE;
+    border-radius: 6px;
+  }
+
+  /** Подвал сайта **/
+
+  .footer {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .footer__heading {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+
+  .footer__form-and-contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .footer__form-container {
+    padding: 32px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-content: center;
+    background-color: var(--white);
+    width: 100%;
+    border-radius: 6px;
+    box-shadow: -5px 5px 0px var(--accent);
+  }
+
+  .footer__form-container-heading {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .footer__form-container-input {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    border-radius: 5px;
+    padding: 10px 16px;
+    background: #f8f8f8;
+    box-shadow: 0px 3px 10px 0px rgba(199, 199, 199, 0.25) inset;
+  }
+
+  .footer__contacts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: var(--white);
+  }
+
+  .footer__contacts-container-contacts {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .footer__contacts-container-privacy-policy {
+    text-align: center;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    color: #949494;
+  }
+
+  .button {
+    padding: 16px 56px;
+    font-size: 10px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    line-height: 15.6px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 6px;
+    color: var(--midnight);
+    background-color: var(--accent);
+    box-shadow: 0 4px 0 var(--shadow);
+    border-style: none;
+  }
+
+  .footer__contacts-container-contacts-item-heading {
+    font-size: 18px;
+    line-height: normal;
+  }
+
+  .contact-link {
+    font-size: 14px;
+    line-height: normal;
   }
 }
